@@ -35,28 +35,45 @@ $ npm run test:cov
 $ docker compose up dev-db -d
 ```
 
-## Prisma
+## Docker restart service and deploy migration on prisma
 
-npm install prisma --save-dev
-npm install @prisma/client
+```bash
+$ npm run db:dev:restart
+```
+
+## Prisma
+```bash
+$ npm install prisma --save-dev
+```
+```bash
+$ npm install @prisma/client
+```
 
 ### Prisma cli
-
+```
 npx prisma init
 
 npx prima migrate dev
 
 npx prisma studio => localhost:5555
-
+```
 
 ## Validator
- npm install class-validator class-transformer
+```bash
+$ npm install class-validator class-transformer
+```
+
 
  ## Config module
+```bash
+$ npm install @nestjs/config
+```
 
-npm install @nestjs/config
 
 ## Passport - jwt
-npm install @nestjs/passport passport @nestjs/jwt passport-jwt
-
-npm install --save-dev @types/passport-jwt
+```bash
+$ npm install @nestjs/passport passport @nestjs/jwt passport-jwt
+```
+```bash
+$ npm install --save-dev @types/passport-jwt
+```
